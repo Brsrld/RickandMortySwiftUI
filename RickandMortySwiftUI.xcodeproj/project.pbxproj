@@ -21,6 +21,9 @@
 		556F91D826CFBEE300E281B1 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F91D726CFBEE300E281B1 /* TitleView.swift */; };
 		556F91DA26CFC07500E281B1 /* CharacterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F91D926CFC07500E281B1 /* CharacterItemView.swift */; };
 		556F91DF26CFF2AD00E281B1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 556F91DE26CFF2AD00E281B1 /* Kingfisher */; };
+		556F91E626D01E9400E281B1 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F91E526D01E9400E281B1 /* CharacterDetailView.swift */; };
+		556F91EA26D01F0B00E281B1 /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F91E926D01F0B00E281B1 /* CharacterDetail.swift */; };
+		556F91EC26D0200400E281B1 /* HeaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F91EB26D0200400E281B1 /* HeaderDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		556F91D526CFB90900E281B1 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		556F91D726CFBEE300E281B1 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		556F91D926CFC07500E281B1 /* CharacterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterItemView.swift; sourceTree = "<group>"; };
+		556F91E526D01E9400E281B1 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		556F91E926D01F0B00E281B1 /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
+		556F91EB26D0200400E281B1 /* HeaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			children = (
 				556F91B026CFA80D00E281B1 /* ContentView.swift */,
 				556F91AE26CFA80D00E281B1 /* RickandMortySwiftUIApp.swift */,
+				556F91E526D01E9400E281B1 /* CharacterDetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -129,6 +136,7 @@
 		556F91C426CFADF300E281B1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				556F91E226D01D5900E281B1 /* Detail */,
 				556F91C526CFAE1000E281B1 /* NavigationBarView.swift */,
 				556F91CD26CFB62800E281B1 /* LogoView.swift */,
 				556F91D726CFBEE300E281B1 /* TitleView.swift */,
@@ -141,8 +149,17 @@
 			isa = PBXGroup;
 			children = (
 				556F91D026CFB73700E281B1 /* Constants.swift */,
+				556F91E926D01F0B00E281B1 /* CharacterDetail.swift */,
 			);
 			path = Utilty;
+			sourceTree = "<group>";
+		};
+		556F91E226D01D5900E281B1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				556F91EB26D0200400E281B1 /* HeaderDetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +240,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556F91EA26D01F0B00E281B1 /* CharacterDetail.swift in Sources */,
 				556F91CE26CFB62800E281B1 /* LogoView.swift in Sources */,
 				556F91D626CFB90900E281B1 /* Service.swift in Sources */,
 				556F91C226CFA97000E281B1 /* CharacterModel.swift in Sources */,
 				556F91B126CFA80D00E281B1 /* ContentView.swift in Sources */,
 				556F91DA26CFC07500E281B1 /* CharacterItemView.swift in Sources */,
+				556F91E626D01E9400E281B1 /* CharacterDetailView.swift in Sources */,
 				556F91C626CFAE1000E281B1 /* NavigationBarView.swift in Sources */,
+				556F91EC26D0200400E281B1 /* HeaderDetailView.swift in Sources */,
 				556F91AF26CFA80D00E281B1 /* RickandMortySwiftUIApp.swift in Sources */,
 				556F91D126CFB73700E281B1 /* Constants.swift in Sources */,
 				556F91D826CFBEE300E281B1 /* TitleView.swift in Sources */,
