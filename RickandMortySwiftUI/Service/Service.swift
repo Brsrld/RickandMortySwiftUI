@@ -7,7 +7,9 @@
 
 import Foundation
 
-class Service : ObservableObject{
+// MARK: - Fetch Data Service
+
+class Service : ObservableObject {
     @Published var characters = [Character]()
     
     func loadData(completion:@escaping ([Character]) -> ()) {
@@ -17,7 +19,6 @@ class Service : ObservableObject{
         }
         URLSession.shared.dataTask(with: url) { data, response, error in
             let characters = try! JSONDecoder().decode(Result.self, from: data!)
-            print(characters)
             DispatchQueue.main.async {
                 completion(characters.results)
             }

@@ -12,6 +12,7 @@ struct RickandMortySwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(CharacterDetail())
         }
     }
 }

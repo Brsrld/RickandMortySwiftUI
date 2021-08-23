@@ -28,6 +28,7 @@ struct TitleView: View {
     }
 }
 
+// MARK: - Previews
 struct TitleView_Previews: PreviewProvider {
     static var previews: some View {
         TitleView(title: "Characters")

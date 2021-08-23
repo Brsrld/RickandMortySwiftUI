@@ -7,21 +7,16 @@
 
 import Foundation
 
+// MARK: - Character Models
+
 struct Character: Codable, Identifiable {
     let id = UUID()
     let name: String
     let status: String
-    let type: String?
     let gender: String
     let origin: Origin
     let image: String
     let species: String
+    let location: Location
 }
 
-struct Origin: Codable {
-    let name: String
-}
-
-struct Result: Codable {
-    let results: [Character]
-}

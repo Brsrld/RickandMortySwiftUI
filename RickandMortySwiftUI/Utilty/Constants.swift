@@ -7,5 +7,8 @@
 
 import SwiftUI
 
+// MARK: - Constants
+
 let serviceUrl: String = "https://rickandmortyapi.com/api/character"
 
+let feedback = UIImpactFeedbackGenerator(style: .medium)
