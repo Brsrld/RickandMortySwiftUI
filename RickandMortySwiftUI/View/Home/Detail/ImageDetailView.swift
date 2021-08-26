@@ -24,7 +24,6 @@ struct ImageDetailView: View {
                 .foregroundColor(.accentColor)
         })//; VStack
         .cornerRadius(15)
-        .background(Color.black)
     }
 }
 
@@ -35,6 +34,5 @@ struct ImageDetailView_Previews: PreviewProvider {
             .environmentObject(CharacterDetail())
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(Color.black)
     }
 }

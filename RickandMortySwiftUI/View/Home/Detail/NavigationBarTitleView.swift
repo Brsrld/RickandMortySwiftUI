@@ -38,6 +38,5 @@ struct NavigationBarTitleView_Previews: PreviewProvider {
             .environmentObject(CharacterDetail())
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(Color.black)
     }
 }

@@ -34,7 +34,7 @@ struct CharacterItemView: View {
                 
                 Text(species)
                     .fontWeight(.light)
-                    .foregroundColor(.white)
+                
             })//; VStack
             Spacer()
         }//; HStack
@@ -47,6 +47,5 @@ struct CharacterItemView_Previews: PreviewProvider {
         CharacterItemView(name: "Rick", species: "Rick's Toxic Side", image: "sample")
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(Color.black)
     }
 }

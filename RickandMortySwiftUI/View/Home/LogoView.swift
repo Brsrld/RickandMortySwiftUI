@@ -42,6 +42,5 @@ struct LogoView_Previews: PreviewProvider {
         LogoView()
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(Color.black)
     }
 }

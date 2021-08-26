@@ -21,7 +21,6 @@ struct CharacterDetailView: View {
                     .padding(.bottom)
                     .padding(.top,
                              UIApplication.shared.windows.first?.safeAreaInsets.top)
-                    .background(Color.black)
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 0)
            
                 ImageDetailView()
@@ -36,7 +35,7 @@ struct CharacterDetailView: View {
                         .padding(.bottom, 10)
                 })//; Scroll
             }//; VStack
-            .background(Color.black.ignoresSafeArea(.all, edges: .all))
+           // .background(Color.black.ignoresSafeArea(.all, edges: .all))
         }//; ZStack
         .ignoresSafeArea(.all, edges: .top)
     }

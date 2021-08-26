@@ -24,7 +24,6 @@ struct CharacterContentDetailView: View {
                 
                 Text(detail.selectedCharacter?.name ?? "No name")
                     .font(.footnote)
-                    .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                 
             }//; HStack
@@ -36,7 +35,6 @@ struct CharacterContentDetailView: View {
                 
                 Text(detail.selectedCharacter?.gender ?? "No species")
                     .font(.footnote)
-                    .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                 
             }//; HStack
@@ -48,7 +46,6 @@ struct CharacterContentDetailView: View {
                 
                 Text(detail.selectedCharacter?.status ?? "No status")
                     .font(.footnote)
-                    .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                 
             }//; HStack
@@ -60,7 +57,6 @@ struct CharacterContentDetailView: View {
                 
                 Text(detail.selectedCharacter?.species ?? "No species")
                     .font(.footnote)
-                    .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                 
             }//; HStack
@@ -72,7 +68,6 @@ struct CharacterContentDetailView: View {
                 
                 Text(detail.selectedCharacter?.origin.name ?? "No origin")
                     .font(.footnote)
-                    .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                 
             }//; HStack
@@ -84,12 +79,10 @@ struct CharacterContentDetailView: View {
                 
                 Text(detail.selectedCharacter?.location.name ?? "No location")
                     .font(.footnote)
-                    .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                 Spacer()
             }//; HStack
         })//; VStack
-        .background(Color.black)
     }
 }
 

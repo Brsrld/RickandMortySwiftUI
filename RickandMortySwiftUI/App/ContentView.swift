@@ -14,6 +14,8 @@ struct ContentView: View {
     @StateObject var service = Service()
     @State var items = [Character]()
     @EnvironmentObject var detail: CharacterDetail
+    @State var schemeStatus = true
+    @State var color = ColorScheme.light
     
     // MARK: - Body
     var body: some View {
@@ -25,10 +27,28 @@ struct ContentView: View {
                         .padding(.bottom)
                         .padding(.top,
                                  UIApplication.shared.windows.first?.safeAreaInsets.top)
-                        .background(Color.black)
-                        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 0)
                     
-                    TitleView(title: "Characters")
+                    HStack {
+                        TitleView(title: "Characters")
+                        
+                        Spacer()
+                        
+                        Button (
+                            action: {
+                                if schemeStatus == true {
+                                    color = .dark
+                                    self.schemeStatus.toggle()
+                                } else {
+                                    color = .light
+                                    self.schemeStatus.toggle()
+                                }
+                            }, label: {
+                               Image(systemName:"moon.fill")
+                                Text("Dark Mode")
+                            }
+                        )
+                        Spacer()
+                    }
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
                         ForEach(items) { item in
@@ -47,12 +67,13 @@ struct ContentView: View {
                         }//; Loop
                     })//; Scroll
                 }//; VStack
-                .background(Color.black.ignoresSafeArea(.all, edges: .all))
+                .ignoresSafeArea(.all, edges: .all)
             } else {
                 CharacterDetailView()
             }
         }//; ZStack
         .ignoresSafeArea(.all, edges: .top)
+        .preferredColorScheme(color)
     }
 }
 
